@@ -5,21 +5,21 @@
 class Flow < Formula
   desc "A streaming JSON & YAML processor CLI tool"
   homepage "https://github.com/GeoffMall/flow"
-  version "1.5.0"
+  version "1.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/GeoffMall/flow/releases/download/v1.5.0/flow_1.5.0_darwin_amd64.tar.gz"
-      sha256 "867b789de594dc489ea6701f4989847c64829d8de55b3f50d336342eabc2de00"
+      url "https://github.com/GeoffMall/flow/releases/download/v1.5.1/flow_1.5.1_darwin_amd64.tar.gz"
+      sha256 "95776846edd0864b6b67f3130452f5b6ca0eeaed75469443b7b4d516b18ff2f3"
 
       def install
         bin.install "flow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/GeoffMall/flow/releases/download/v1.5.0/flow_1.5.0_darwin_arm64.tar.gz"
-      sha256 "35a783b4ba006a9cea28e57fcf956a7cc8762849dbf3581817980a22d9d5d0a1"
+      url "https://github.com/GeoffMall/flow/releases/download/v1.5.1/flow_1.5.1_darwin_arm64.tar.gz"
+      sha256 "ec53d35364fc45786f8a426b5efa0367622e85c6470a94a3a06c48afc4c7ba15"
 
       def install
         bin.install "flow"
@@ -29,15 +29,15 @@ class Flow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/GeoffMall/flow/releases/download/v1.5.0/flow_1.5.0_linux_amd64.tar.gz"
-      sha256 "ec35e2c6bb61281b8c8874720227dafd3f3b40fd8226e3eef4462fc09241a213"
+      url "https://github.com/GeoffMall/flow/releases/download/v1.5.1/flow_1.5.1_linux_amd64.tar.gz"
+      sha256 "cf0534522a1a6d9cce2ba7f38fbc3ef5b2f9be7c31e325159416326dbadcd499"
       def install
         bin.install "flow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/GeoffMall/flow/releases/download/v1.5.0/flow_1.5.0_linux_arm64.tar.gz"
-      sha256 "4b1accd3d2b83e509eacc255e2ec6064a6d3e13fd94f92e5bc7380068c98cff3"
+      url "https://github.com/GeoffMall/flow/releases/download/v1.5.1/flow_1.5.1_linux_arm64.tar.gz"
+      sha256 "598c08fa1832779cf3a9106a14bd9e32dc20e7db27806cb0fd4e014166ee0244"
       def install
         bin.install "flow"
       end
